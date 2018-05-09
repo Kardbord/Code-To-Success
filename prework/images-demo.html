@@ -9,13 +9,28 @@
     <body>
         <h3>Images Demo</h3>
 
-        <!-- Width attribute preserves aspect ratio -->
         <div>
             <p>
             This image is courtesy of
             <a href="https://xkcd.com/about/" target="_blank">xkcd</a>
             </p>
         </div>
+
+        <!-- Images can have urls or relative paths as a source -->
+
+        <div>
+            <img src="xkcd-tags.png" usemap="#xkcd">
+        </div>
+        <map name="xkcd">
+            <area shape="rect" coords="0,0,50,50" alt="goes to google"
+                href="https://www.google.com/">
+            <area shape="rect" coords="25,25,100,100" alt="goes to yahoo"
+                href="https://www.yahoo.com/">
+            <area shape="circle" coords="75,50,50" alt="goes to bing"
+                href="https://www.bing.com/">
+        </map>
+
+        <!-- Width attribute preserves aspect ratio -->
 
         <hr>
 
