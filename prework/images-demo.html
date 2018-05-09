@@ -7,19 +7,72 @@
     </head>
 
     <body>
-        <h3>Below are some lists</h3>
+        <h3>Images Demo</h3>
+
+        <!-- Width attribute preserves aspect ratio -->
         <div>
-            <ul>
-                <li>The <mark>marked</mark> text tag</li>
-                <li>The <small>small</small> text tag</li>
-                <li>The <del>deleted</del> text tag</li>
-                <li>The <ins>inserted</ins> text tag</li>
-                <li>The <sub>subscript</sub> text tag</li>
-                <li>The <sup>superscript</sup> text tag</li>
-                <li>The <pre>pre</pre> text tag is good for code</li>
-                <li>The <q>quotation</q> text tag</li>
-            </ul>
+            <p>
+            This image is courtesy of
+            <a href="https://xkcd.com/about/" target="_blank">xkcd</a>
+            </p>
         </div>
+
+        <hr>
+
+        <div>
+            <a href="https://xkcd.com/1144/" target="_blank">
+            <img src="https://imgs.xkcd.com/comics/tags_2x.png">
+            </a>
+        </div>
+
+        <hr>
+
+        <div>
+            <a href="https://xkcd.com/1144/" target="_blank">
+            <img src="https://imgs.xkcd.com/comics/tags_2x.png" 
+              width="300">
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- setting width="x%" scales the image with the window-->
+        <div>
+            <a href="https://xkcd.com/1144/" target="_blank">
+            <img src="https://imgs.xkcd.com/comics/tags_2x.png" 
+              width="50%">
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- The alt attribute extends accessibility for those with disabilities -->
+        <div>
+            <a href="https://xkcd.com/1144/" target="_blank">
+            <img src="https://imgs.xkcd.com/comics/tags_2x.png" 
+              width="50%" alt="An xkcd comic">
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- height attribute does not preserve aspect ratio -->
+        <div>
+            <a href="https://xkcd.com/1144/" target="_blank">
+            <img src="https://imgs.xkcd.com/comics/tags_2x.png" 
+              height="50%" alt="An xkcd comic">
+            </a>
+        </div>
+
+        <hr>
+
+        <div>
+            <a href="https://xkcd.com/1144/" target="_blank">
+            <img src="https://imgs.xkcd.com/comics/tags_2x.png" 
+              height="600" alt="An xkcd comic">
+            </a>
+        </div>
+
     </body>
 
 </html>
