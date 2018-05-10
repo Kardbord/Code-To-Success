@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  color: #ab3939;
+  background: url('../img/umbrella.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+#heading {
+  padding: 42px;
+  background-color: #e8e8e8;
+}
+
+#page-title { }
+
+.content {
+  font-size: 0.8em;
+  color: #767676;
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-left: 10px solid #ab3939;
+}
+
+/* See http://border-radius.com/ */
+#sub {
+  background-color: #e8e8e8;
+  margin-top: 10px;
+  padding: 5px 5px 5px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
