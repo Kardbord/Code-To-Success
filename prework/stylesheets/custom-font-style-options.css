@@ -1,0 +1,11 @@
+/* Example document of options available for customizing fonts */
+
+.myclass {
+  background-color: yellow;
+  font-weight: 600;
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  text-decoration: underline line-through overline;
+  text-shadow: 5px 3px 11px #b02626;
+}
