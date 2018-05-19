@@ -5,7 +5,7 @@
         <meta author="Tanner Kvarfordt">
         <meta description="A replication of the Google homepage">
         <meta keywords="Google, replication, homepage">
-        <title>Google Homepage Replicate</title>
+        <title>Google Homepage Clone</title>
         <link rel="stylesheet" href="./styles.css">
     </head>
 
@@ -13,23 +13,25 @@
         <div class="content">
 
             <div class="primary-content">
-                <div id="logo-container">
-                    <img src="./img/google_logo.png" id="google-logo">
+                <div class="primary-content-section">
+                    <div id="logo-container">
+                        <img src="./img/google_logo.png" id="google-logo" alt="Google Logo" width=350>
+                    </div>
+
+                    <form action="my-form-handler.py" method="get">
+                        <div id="search-container">
+                            <label for="search-bar"></label>
+                            <input type="text" id="search-bar" name="search-bar">
+                        </div>
+
+                        <div id="button-container">
+                            <label for="search-button"></label>
+                            <input type="submit" id="search-button" name="search-button" value="Google Search">
+                            <label for="lucky-button"></label>
+                            <input type="button" id="lucky-button" name="lucky-button" value="I'm Feeling Lucky">
+                        </div>
+                    </form>
                 </div>
-
-                <form action="my-form-handler.py" method="get">
-                    <div id="search-container">
-                        <label for="search-bar"></label>
-                        <input type="text" id="search-bar" name="search-bar">
-                    </div>
-
-                    <div id="button-container">
-                        <label for="search-button"></label>
-                        <input type="submit" id="search-button" name="search-button" value="Google Search">
-                        <label for="lucky-button"></label>
-                        <input type="button" id="lucky-button" name="lucky-button" value="I'm Feeling Lucky">
-                    </div>
-                </form>
             </div>
 
             <div class="header-content">
