@@ -1,0 +1,24 @@
+.content {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-content {
+    display: inline-block;
+    width: 100%;
+}
+
+#search-bar {
+    width: 22%;
+    height: 25px;
+}
+
+#logo-container {
+}
+
+#google-logo {
+    max-width: 16%;
+    width: auto;
+}
