@@ -9,13 +9,14 @@ body {
 }
 
 /* ------------- Navigation Content ------------ */
+.nav-op {
+    margin: 10px;
+}
+
 .nav-left {
 }
 
 .nav-right {
-}
-
-.nav-op {
 }
 
 /* --------------- Header Content -------------- */
