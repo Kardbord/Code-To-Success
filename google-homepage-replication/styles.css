@@ -1,3 +1,5 @@
+/* --------------- General Content ------------- */
+
 body {
     font-family: arial, sans-serif;
 }
@@ -35,10 +37,11 @@ body {
 
 #search-bar {
     width: 22%;
-    height: 25px;
+    height: 34px;
 }
 
 #button-container {
+    padding: 10px;
 }
 
 #search-button {
