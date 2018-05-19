@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+/* -------------- Primary Content -------------- */
+
 .primary-content {
     display: inline-block;
     width: 100%;
@@ -23,3 +25,5 @@
     max-width: 16%;
     width: auto;
 }
+
+/* ---------- End Primary Content -------------- */
