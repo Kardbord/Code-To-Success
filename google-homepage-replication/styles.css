@@ -4,21 +4,21 @@ body {
 
 .content {
     position: relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+}
+
+/* --------------- Header Content -------------- */
+
+.header-content {
 }
 
 /* -------------- Primary Content -------------- */
 
 .primary-content {
     display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-}
-
-#search-bar {
-    width: 22%;
-    height: 25px;
 }
 
 #logo-container {
@@ -30,4 +30,24 @@ body {
     width: auto;
 }
 
-/* ---------- End Primary Content -------------- */
+#search-container {
+}
+
+#search-bar {
+    width: 22%;
+    height: 25px;
+}
+
+#button-container {
+}
+
+#search-button {
+}
+
+#lucky-button {
+}
+
+/* --------------- Footer Content -------------- */
+
+.footer-content {
+}

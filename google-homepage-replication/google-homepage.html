@@ -17,12 +17,19 @@
                     <img src="./img/google_logo.png" id="google-logo">
                 </div>
 
-                <div id="search-container">
-                    <form action="my-form-handler.py" method="get">
+                <form action="my-form-handler.py" method="get">
+                    <div id="search-container">
                         <label for="search-bar"></label>
                         <input type="text" id="search-bar" name="search-bar">
-                    </form>
-                </div>
+                    </div>
+
+                    <div id="button-container">
+                        <label for="search-button"></label>
+                        <input type="submit" id="search-button" name="search-button" value="Google Search">
+                        <label for="lucky-button"></label>
+                        <input type="button" id="lucky-button" name="lucky-button" value="I'm Feeling Lucky">
+                    </div>
+                </form>
             </div>
 
             <div class="header-content">
