@@ -11,6 +11,7 @@ body {
 /* --------------- Header Content -------------- */
 
 .header-content {
+    display: flex;
 }
 
 /* -------------- Primary Content -------------- */
@@ -52,4 +53,8 @@ body {
 /* --------------- Footer Content -------------- */
 
 .footer-content {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
 }
