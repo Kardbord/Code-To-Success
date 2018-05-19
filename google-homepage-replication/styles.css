@@ -1,3 +1,7 @@
+body {
+    font-family: arial, sans-serif;
+}
+
 .content {
     position: relative;
     text-align: center;
