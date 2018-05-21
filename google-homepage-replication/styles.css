@@ -35,6 +35,20 @@ body {
     width: 100%;
 }
 
+#sign-in {
+    border-radius: 2px;
+    width: 80px;
+    height: 35px;
+    background-color: #2289d5;
+    color: white;
+    position: relative;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 600;
+    margin: 0px 5px 5px 5px;
+    border: 1px solid #CAC9C9;
+}
+
 /* -------------- Primary Content -------------- */
 
 .primary-content {
