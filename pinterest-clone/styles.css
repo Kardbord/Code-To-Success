@@ -1,0 +1,46 @@
+/* --------------- General Content ------------- */
+
+body {
+    font-family: arial, sans-serif;
+}
+
+/* --------------- Header Content -------------- */
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+#pinterest-icon {
+    margin-top: 10px;
+    margin-left: 50px;
+    color: #C92228;
+}
+
+#icon-container {
+    padding-top: 10px;
+}
+
+#icon-container > i {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: grey;
+}
+
+/* -------------- Primary Content -------------- */
+
+.primary-content {
+}
+
+#search-bar {
+    width: 80%;
+    height: 34px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    border: 1px solid grey;
+    margin: 10px 50px 0px 50px;
+}
