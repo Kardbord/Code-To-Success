@@ -11,6 +11,12 @@ body {
 /* ------------- Navigation Content ------------ */
 .nav-op {
     margin: 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+.nav-op:hover {
+    text-decoration: underline;
 }
 
 .nav-left {
