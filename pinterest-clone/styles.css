@@ -21,11 +21,15 @@ body {
     padding-top: 10px;
 }
 
-#icon-container > i {
+.nav-option {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    color: grey;
+    color: #bababa;
+}
+
+.nav-option:hover {
+    color: #5f5f5f;
 }
 
 /* -------------- Primary Content -------------- */
@@ -37,10 +41,16 @@ body {
     width: 80%;
     height: 34px;
 
+    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-weight: bold;
+    color: black;
+
+    background-color: #80808033;
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    border: 1px solid grey;
+    border: 1px solid #80808033;
     margin: 10px 50px 0px 50px;
 }
