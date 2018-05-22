@@ -32,25 +32,80 @@ body {
     color: #5f5f5f;
 }
 
-/* -------------- Primary Content -------------- */
-
-.primary-content {
-}
-
 #search-bar {
     width: 80%;
     height: 34px;
+    padding-left: 10px;
 
     font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
     font-weight: bold;
     color: black;
 
-    background-color: #80808033;
+    background-color: #e9e9e9;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    border: 1px solid #80808033;
     margin: 10px 50px 0px 50px;
+    border: none;
+}
+
+/* -------------- Primary Content -------------- */
+
+.primary-content {
+    width: 100%;
+    margin: 50px auto;
+}
+
+#columns {
+    -webkit-column-count: 5;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 5;
+    -moz-column-gap: 10px;
+    column-count: 5;
+    column-gap: 10px;
+    /* Firefox doesn't like column-fill property */
+}
+
+.pin {
+    display: inline-block;
+    background: #FEFEFE;
+    border: 2px solid #FAFAFA;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0px 2px 15px 0px;
+    -webkit-column-break-inside: avoid;
+    -moz-page-break-inside: avoid;
+    page-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+    padding: 15px 15px 5px 15px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(50%,#fff), color-stop(100%,transparent)); /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(left, transparent 0%,#e4e4e4 50%,transparent 100%); /* Chrome10+, Safari5.1+ */
+    background: -moz-linear-gradient(left, transparent 0%,#e4e4e4 50%,transparent 100%);    /* FF3.6+ */
+    background: linear-gradient(to left, transparent 0%,#e4e4e4 50%,transparent 100%);
+    opacity: 1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.pin img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.pin p {
+    font: 12px/18px Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.pin:hover {
+    border-radius: 20px;
+    cursor: pointer;
 }
