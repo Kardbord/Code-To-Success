@@ -1,0 +1,53 @@
+body {
+  background-color: #f6f6f6;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper {
+  padding: 21px;
+}
+.page-wrapper .featured {
+  color: Tomato;
+}
+.page-wrapper .featured .subheading a {
+  color: black;
+  text-decoration: none;
+}
+.page-wrapper .featured .subheading a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.page-wrapper .page-content {
+  background-color: RoyalBlue;
+  padding: 42px;
+  color: #f6f6f6;
+}
+.page-wrapper .page-content .container {
+  height: 60px !important;
+  font-family: courier;
+}
+.page-wrapper .page-content .container .description {
+  float: left;
+  width: 75%;
+}
+.page-wrapper .page-content .container .sidebar {
+  font-family: Verdana;
+  text-align: right;
+  float: right;
+  width: 25%;
+  color: red;
+}
+.page-wrapper .page-content .container .sidebar .subheading a {
+  color: black;
+  text-decoration: none;
+}
+.page-wrapper .page-content .container .sidebar .subheading a:hover {
+  color: black;
+  text-decoration: underline;
+}
