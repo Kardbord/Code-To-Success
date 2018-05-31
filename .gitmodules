@@ -7,3 +7,6 @@
 [submodule "html-email"]
 	path = html-email
 	url = https://github.com/jordanhudgens/html-email.git
+[submodule "social-network-html-css"]
+	path = social-network-html-css
+	url = https://github.com/jordanhudgens/social-network-html-css.git
