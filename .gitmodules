@@ -1,3 +1,9 @@
 [submodule "Jordan-Howard-Manuscript"]
 	path = Jordan-Howard-Manuscript
 	url = https://github.com/Jordanhoward91/html_css_bootcamp.git
+[submodule "HTML-email-project/tesla-html-css-clone"]
+	path = HTML-email-project/tesla-html-css-clone
+	url = https://github.com/jordanhudgens/tesla-html-css-clone.git
+[submodule "html-email"]
+	path = html-email
+	url = https://github.com/jordanhudgens/html-email.git
