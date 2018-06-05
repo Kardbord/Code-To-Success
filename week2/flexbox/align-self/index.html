@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>align-content vs. align-items</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            display: flex;
+
+        }
+
+        img {
+            margin: 10px;
+            width: 120px;
+            height: 70px;
+        }
+
+        .img1 {
+            align-self: flex-end;
+        }
+
+        .img2 {
+            align-self: center;
+        }
+
+        .img3 {}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://source.unsplash.com/random/150x150" class="img1">
+        <img src="https://source.unsplash.com/random/150x150" class="img2">
+        <img src="https://source.unsplash.com/random/150x150" class="img3">
+    </div>
+</body>
+
+</html>
