@@ -6,32 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar Project</title>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <style>
         body {
             font-family: "Amatic SC", sans-serif;
             font-size: 24px;
             margin: 0;
             padding: 0;
+            background-color: #838B8B;
         }
 
         .navbar {
             display: flex;
             justify-content: space-between;
+            position: fixed;
+            width: 100%;
 
-            padding: 10px;
             background-color: black;
-
-            color: white;
+            color: seashell;
         }
 
         .navlink {
-            margin-left: 10px;
-            margin-right: 10px;
-            color: white;
-            text-decoration: none;
+            height: 100%;
         }
 
+        .navlink a {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: seashell;
+        }
+
+        .navlink a:hover {
+            color: black;
+            background-color: seashell;
+        }
 
         .navbar .navleft {
             display: flex;
@@ -43,6 +52,7 @@
 
         .navbar .navleft .title {
             margin-right: 50px;
+            cursor: default;
         }
 
         .navbar .navright {
@@ -53,7 +63,24 @@
             margin-right: 10px;
         }
 
-        .navbar .navright .navlink {}
+        #top-content {
+            height: 700px;
+            background-color: #b04d4d99;
+        }
+
+        #middle-content1 {
+            height: 500px;
+            background-color: #2F4F4F;
+        }
+
+        #middle-content2 {
+            height: 200px;
+        }
+
+        #bottom-content {
+            height: 250px;
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -61,19 +88,28 @@
     <div class="navbar">
 
         <div class="navleft">
-            <div class="title navfirst">
-                Title
+            <div class="title navfirst"> Title </div>
+
+            <div class="navlink">
+                <a href="#" id="link1"> Link1 </a>
             </div>
 
-            <a href="#" class="navlink" id="link1"> Link1 </a>
-
-            <a href="#" class="navlink" id="link2"> Link2 </a>
+            <div class="navlink">
+                <a href="#" id="link2"> Link2 </a>
+            </div>
         </div>
 
         <div class="navright">
-            <a href="#" class="navlink navlast" id="link3"> Link3 </a>
+            <div class="navlink navlast">
+                <a href="#" id="link3"> Link3 </a>
+            </div>
         </div>
     </div>
+
+    <div id="top-content"></div>
+    <div id="middle-content1"></div>
+    <div id="middle-content2"></div>
+    <div id="bottom-content"></div>
 </body>
 
 </html>
