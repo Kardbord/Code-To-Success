@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Navbar Project</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+
+            border-bottom: 2px solid grey;
+            padding: 10px;
+        }
+
+        .navbar .navleft {
+            display: flex;
+        }
+
+        .navbar .navleft .navfirst {
+            margin-left: 50px;
+        }
+
+        .navbar .navleft .title {
+            margin-right: 50px;
+        }
+
+        .navbar .navleft .navlink {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .navbar .navright {
+            display: flex;
+        }
+
+        .navbar .navright .navlast {
+            margin-right: 10px;
+        }
+
+        .navbar .navright .navlink {}
+    </style>
 </head>
+
 <body>
-    
+    <div class="navbar">
+
+        <div class="navleft">
+            <div class="title navfirst">
+                Title
+            </div>
+
+            <div class="navlink">
+                <a href="#" id="link1"> Link1 </a>
+            </div>
+
+            <div class="navlink">
+                <a href="#" id="link2"> Link2 </a>
+            </div>
+        </div>
+
+        <div class="navright">
+            <div class="navlink navlast">
+                <a href="#" id="link3"> Link3 </a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
