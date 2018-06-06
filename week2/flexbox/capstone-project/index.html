@@ -19,7 +19,7 @@
             background-color: #838B8B;
         }
 
-        #menu {
+        #dropbtn {
             display: none;
         }
 
@@ -111,6 +111,32 @@
             padding-right: 10px;
             text-decoration: none;
             color: seashell;
+            cursor: pointer;
+        }
+
+        #dropdown-content {
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        #dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        #dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .hide {
+            display: none;
         }
 
         @media (max-width: 40em) {
@@ -118,17 +144,25 @@
                 display: none;
             }
 
-            #menu {
+            .navbar .navleft .navfirst {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10px;
+            }
+
+            #dropbtn {
                 display: block;
                 color: white;
             }
 
-            .navitem:hover #menu {
+            .navitem:hover #dropbtn {
                 color: black;
             }
 
         }
     </style>
+
 </head>
 
 <body>
@@ -136,9 +170,16 @@
 
         <div class="navleft">
             <div class="toggle">
-                <a href="#" id="menu">
-                    <i class="fas fa-bars"></i>
-                </a>
+                <div class="dropdown">
+                    <a href="#" onclick="dropDown()" id="dropbtn">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div id="dropdown-content" class="hide">
+                        <a href="#top-content">Home</a>
+                        <a href="#middle-content">Stuff</a>
+                        <a href="#bottom-content">More Stuff</a>
+                    </div>
+                </div>
             </div>
 
             <div class="title navfirst"> Lorem Ipsum </div>
@@ -459,6 +500,27 @@
         tale constituam ne ius. Adhuc virtute nam ut, ei quot adipisci interpretaris nam, te eam errem admodum alienum. Vis
         delicata expetendis ex, has at unum eripuit scriptorem, nec intellegat definitionem te.
     </div>
+    <script>
+        function dropDown() {
+            document.getElementById('dropdown-content').classList.toggle("hide");
+            console.log('clicked');
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('#menu')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (!openDropdown.classList.contains('hide')) {
+                        openDropdown.classList.add('hide');
+                    }
+                }
+            }
+        } 
+    </script>
 </body>
 
 </html>
