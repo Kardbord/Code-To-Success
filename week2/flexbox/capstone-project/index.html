@@ -107,11 +107,8 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
-            padding-left: 10px;
-            padding-right: 10px;
             text-decoration: none;
             color: seashell;
-            cursor: pointer;
         }
 
         #dropdown-content {
@@ -133,6 +130,22 @@
 
         #dropdown-content a:hover {
             background-color: #ddd;
+        }
+
+        .dropdown {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: seashell;
+        }
+
+        .dropdown:hover a i {
+            color: black;
         }
 
         .hide {
@@ -170,8 +183,8 @@
 
         <div class="navleft">
             <div class="toggle">
-                <div class="dropdown">
-                    <a href="#" onclick="dropDown()" id="dropbtn">
+                <div class="dropdown" onclick="dropDown()">
+                    <a href="#" id="dropbtn">
                         <i class="fas fa-bars"></i>
                     </a>
                     <div id="dropdown-content" class="hide">
@@ -507,19 +520,15 @@
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('#menu')) {
+        /*window.onclick = function (event) {
+            if (!event.target.matches('.dropdown')) {
 
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (!openDropdown.classList.contains('hide')) {
-                        openDropdown.classList.add('hide');
-                    }
+                const dropdown = document.getElementById("dropdown-content");
+                if (!dropdown.classList.contains('hide')) {
+                    dropdown.classList.add('hide');
                 }
             }
-        } 
+        } */
     </script>
 </body>
 
