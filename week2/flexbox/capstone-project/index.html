@@ -27,25 +27,23 @@
             color: seashell;
         }
 
-        .navlink {
+        .navitem {
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: 100%;
-        }
-
-        .navlink a {
-            margin-left: 10px;
-            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
             text-decoration: none;
             color: seashell;
         }
 
-        .navlink:hover {
-            background-color: seashell;
+        .navlink {
+            text-decoration: none;
         }
 
-        .navlink:hover a {
+        .navitem:hover {
+            background-color: seashell;
             color: black;
         }
 
@@ -100,19 +98,25 @@
         <div class="navleft">
             <div class="title navfirst"> Title </div>
 
-            <div class="navlink">
-                <a href="#" id="link1"> Link1 </a>
-            </div>
+            <a href="#" id="link1" class="navlink">
+                <div class="navitem">
+                    Link1
+                </div>
+            </a>
 
-            <div class="navlink">
-                <a href="#" id="link2"> Link2 </a>
-            </div>
+            <a href="#" id="link2" class="navlink">
+                <div class="navitem">
+                    Link2
+                </div>
+            </a>
         </div>
 
         <div class="navright">
-            <div class="navlink navlast">
-                <a href="#" id="link3"> Link3 </a>
-            </div>
+            <a href="#" id="link3" class="navlink">
+                <div class="navitem navlast">
+                    Link3
+                </div>
+            </a>
         </div>
     </div>
 
