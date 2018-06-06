@@ -631,8 +631,8 @@ function staticMethods() {
     );
 }
 
-// Javascript promises
-function promises() {
+// Introduction to promises
+function promisesIntro() {
     let sleepyGreeting = new Promise((resolve, reject) => {
         setTimeout(() => {       //
             resolve('Hello...')  // comment out these lines to mimic a failure/reject 
@@ -650,4 +650,24 @@ function promises() {
         .catch(err => {
             console.error(err);
         });
+}
+
+// Using a fetch Promise to communicate with an API
+function promisesWithAPI() {
+    // console.log("Starting fetch call...")
+    const postsPromise = fetch('https://api.dailysmarty.com/posts') // fetch() returns a promise object
+    // console.log("After fetch call...")
+    // console.log(postsPromise);
+    // console.log("Program complete.")
+
+    postsPromise
+        .then(data => data.json()) // interpret the data as json
+        .then(data => {            // then we can use the data as expected
+            data.posts.forEach((item) => {
+                console.log(item.title);
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        })
 }
