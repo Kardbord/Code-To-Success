@@ -132,22 +132,6 @@
             background-color: #ddd;
         }
 
-        .dropdown {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            cursor: pointer;
-        }
-
-        .dropdown:hover {
-            background-color: seashell;
-        }
-
-        .dropdown:hover a i {
-            color: black;
-        }
-
         .hide {
             display: none;
         }
@@ -155,6 +139,22 @@
         @media (max-width: 40em) {
             .navitem {
                 display: none;
+            }
+
+            .dropdown:hover {
+                background-color: seashell;
+            }
+
+            .dropdown:hover a i {
+                color: black;
+            }
+
+            .dropdown {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                cursor: pointer;
             }
 
             .navbar .navleft .navfirst {
@@ -520,15 +520,17 @@
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        /*window.onclick = function (event) {
-            if (!event.target.matches('.dropdown')) {
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown')
+                && !event.target.matches('.fas') && !event.target.matches('.fa-bars')
+                && !event.target.matches('#dropbtn')) {
 
                 const dropdown = document.getElementById("dropdown-content");
                 if (!dropdown.classList.contains('hide')) {
                     dropdown.classList.add('hide');
                 }
             }
-        } */
+        }
     </script>
 </body>
 
