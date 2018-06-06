@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar Project</title>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <style>
         body {
             font-family: "Amatic SC", sans-serif;
@@ -15,6 +17,10 @@
             margin: 0;
             padding: 0;
             background-color: #838B8B;
+        }
+
+        #menu {
+            display: none;
         }
 
         .title {
@@ -55,6 +61,7 @@
             color: black;
         }
 
+
         .navbar .navleft {
             display: flex;
         }
@@ -94,6 +101,33 @@
         #bottom-content {
             font-size: 2em;
         }
+
+        .toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color: seashell;
+        }
+
+        @media (max-width: 40em) {
+            .navitem {
+                display: none;
+            }
+
+            #menu {
+                display: block;
+                color: white;
+            }
+
+            .navitem:hover #menu {
+                color: black;
+            }
+
+        }
     </style>
 </head>
 
@@ -101,6 +135,12 @@
     <div class="navbar">
 
         <div class="navleft">
+            <div class="toggle">
+                <a href="#" id="menu">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
             <div class="title navfirst"> Lorem Ipsum </div>
 
             <a href="#top-content" id="link1" class="navlink">
