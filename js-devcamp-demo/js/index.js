@@ -308,6 +308,7 @@ function referenceOrValue() {
     console.log(obj2.item);
 }
 
+// See https://stackoverflow.com/questions/36636/what-is-a-closure
 function closureDemo() {
     var battingAverage = function () {
         var hits = 100;
@@ -670,4 +671,123 @@ function promisesWithAPI() {
         .catch((err) => {
             console.log(err);
         })
+}
+
+// How to group promises together with Promise.all
+function promiseGrouping() {
+    const greeting = new Promise((resolve, reject) => {
+        resolve('Hi there');
+        reject('Oops, bad greeting');
+    });
+
+    const updateAccount = new Promise((resolve, reject) => {
+        resolve('Updating last login...');
+        reject('Error updating account with login.');
+    });
+
+    const loginActivities = Promise.all([greeting, updateAccount]);
+
+    loginActivities.then(res => {
+        res.forEach(activity => {
+            console.log(activity);
+        })
+    })
+}
+
+// Intro to async and await
+function async_await() {
+    const login = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('User logged in...');
+            }, 2000);
+        });
+    }
+
+    const updateAccount = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('Updating last login...');
+            }, 2000);
+        });
+    }
+
+    async function loginActivities() {
+        const returnedLogin = await login();
+        console.log(returnedLogin);
+
+        const returnedUpdateAccount = await updateAccount();
+        console.log(returnedUpdateAccount);
+    }
+
+    loginActivities();
+}
+
+// async and await with closures
+function async_await_closures() {
+    const login = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('User logged in...');
+            }, 4000);
+        });
+    }
+
+    const updateAccount = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('Updating last login...');
+            }, 2000);
+        });
+    }
+
+    async function loginActivities(login, updateAccount) {
+        const returnedLogin = await login;
+        console.log(returnedLogin);
+
+        const returnedUpdateAccount = await updateAccount;
+        console.log(returnedUpdateAccount);
+    }
+
+    loginActivities(login(), updateAccount());
+}
+
+// async and await for communicating with outside APIs
+function async_await_API_demo() {
+    async function queryApis() {
+        const postsPromise = fetch('https://api.dailysmarty.com/posts');
+        const posts = await postsPromise.then(res => res.json());
+        console.log(posts);
+
+        const reposPromise = fetch('https://api.github.com/users/kardbord/repos');
+        const repos = await reposPromise.then(res => res.json());
+        console.log(repos);
+    }
+
+    queryApis();
+}
+
+// Error handling with async and await
+function async_await_error_handling() {
+    async function queryApis() {
+        try {
+            const postsPromise = fetch('http://api.dailysmarty.com/posts');
+            const posts = await postsPromise.then(res => res.json());
+            console.log(posts);
+        } catch (err) {
+            console.log(err);
+            console.log('There was an error with the DailySmarty API');
+        }
+
+        try {
+            const reposPromise = fetch('https://api.github.com/users/jordanhudgens/repos');
+            const repos = await reposPromise.then(res => res.json());
+            console.log(repos);
+        } catch (err) {
+            console.log(err);
+            console.log('There was an error with the GitHub API');
+        }
+    }
+
+    queryApis();
 }
