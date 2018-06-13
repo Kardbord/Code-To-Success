@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="contact_form.php" method="get">
+        <label form="name">Name:</label>
+        <input type="text" name="name" placeholder="SNOW,JON" required>
+        <br>
+
+        <label form="email">Email:</label>
+        <input type="text" name="email" value="jon@snow.com" required>
+        <br>
+
+        <label for="message">Message:</label>
+        <br>
+        <textarea name="message" rows="15" cols="100"></textarea>
+        <br>
+
+        <label for="options">Packing Requirements (select all that apply):</label>
+        <br>
+        <input type="checkbox" name="options" value="premium"> Premium
+        <br>
+        <input type="checkbox" name="options" value="automated"> Automated
+        <br>
+        <input type="checkbox" name="options" value="rush"> Rush
+        <br>
+
+        <label for="delivery">Shipping Preference:</label>
+        <br>
+        <input type="radio" name="delivery" value="in_store"> In Store
+        <br>
+        <input type="radio" name="delivery" value="shipping"> Shipping
+        <br>
+
+        <label for="source">How did you hear about us?</label>
+        <select name="source">
+            <option value="google">Google</option>
+            <option value="yahoo">Yahoo</option>
+            <option value="fb">Facebook</option>
+            <option value="twitter">Twitter</option>
+        </select>
+        <br>
+        <br>
+        <label for="source">How did you hear about us?</label>
+        <select name="source" multiple="true">
+            <option value="google">Google</option>
+            <option value="yahoo">Yahoo</option>
+            <option value="fb">Facebook</option>
+            <option value="twitter">Twitter</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="shipping_method">Shipping Method:</label>
+        <select name="shipping_method">
+            <optgroup label="Business">
+                <option value="biz_overnight">Overnight</option>
+                <option value="biz_groung">Ground</option>
+            </optgroup>
+            <optgroup label="Residential">
+                <option value="res_overnight">Overnight</option>
+                <option value="res_groung">Ground</option>
+            </optgroup>
+        </select>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
