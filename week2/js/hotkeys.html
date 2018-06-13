@@ -15,7 +15,8 @@
 <script>
     const hotKeys = (e) => {
         let windowEvent = window.event ? event : e;
-        if (windowEvent.keyCode == 66 && windowEvent.ctrlKey) {
+        // 66 is the 'b' key
+        if (windowEvent.keyCode == 66 && windowEvent.ctrlKey) { 
             const searchBar = document.querySelector('#searchBar');
             searchBar.focus();
         }
