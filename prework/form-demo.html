@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="contact_form.php" method="get">
+    <form action="contact_form.php" method="get" oninput="invoice.value=parseInt(total.value)+parseInt(shipping.value)">t 
         <label form="name">Name:</label>
         <input type="text" name="name" placeholder="SNOW,JON" required>
         <br>
@@ -70,6 +70,17 @@
                 <option value="res_groung">Ground</option>
             </optgroup>
         </select>
+
+        <label for="total">Subtotal:</label>
+        <br>
+        <input type="text" name="total" value="0" />
+        <br>
+
+        <label for="shipping">Shipping:</label>
+        <br>
+        <input type="text" name="shipping" value="9" />
+        <br> Total for invoice:
+        <output name="invoice" for="total tax"></output>
 
         <input type="submit">
     </form>
