@@ -14,7 +14,7 @@ document
 
 document.location.href
 
-// On dailysmarty
+// On http://dailysmarty.com
 document.location.protocol
 
 // On wsj
