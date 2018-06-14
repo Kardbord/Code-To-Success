@@ -17,7 +17,7 @@ body {
 /* This is the centering code */
 .section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* this allows elements to wrap around on smaller screens */
   justify-content: center;
   align-items: center;
 }
