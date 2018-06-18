@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 .logo-div {
     display: flex;
     flex-direction: column;
@@ -10,11 +14,22 @@
     width: 125px;
 }
 
-.search-div {
+.search-div-wrapper {
     display: flex;
     justify-content: center;
 }
 
+.search-div {
+    text-align: center;
+    width: 700px;
+}
+
 #search-bar {
-    height: 200px;
+    font-size: 20pt;
+    height: 100px;
+    width: 700px;
+}
+
+.instruction {
+    text-align: right;
 }
