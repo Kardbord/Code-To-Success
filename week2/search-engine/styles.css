@@ -9,3 +9,12 @@
 .logo {
     width: 125px;
 }
+
+.search-div {
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    height: 200px;
+}
