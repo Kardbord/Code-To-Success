@@ -21,15 +21,49 @@ body {
 
 .search-div {
     text-align: center;
-    width: 700px;
+    width: 1000px;
 }
 
 #search-bar {
     font-size: 20pt;
     height: 100px;
-    width: 700px;
+    width: 1000px;
 }
 
 .instruction {
+    margin-top: 10px;
     text-align: right;
+    color: #4a4a4a;
 }
+
+.recent-wrapper {
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.recent {
+    width: 1000px;
+}
+
+.recent-title {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #0079ff;
+}
+
+.recent-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-title {}
+
+.post-subtitle {
+    font-size: 10pt;
+    font-weight: 900;
+    color: #4a4a4a;
+    margin-top: 5px;
+}
+
