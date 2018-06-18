@@ -25,9 +25,26 @@ body {
 }
 
 #search-bar {
-    font-size: 20pt;
     height: 100px;
     width: 1000px;
+    font-size: 2.5em;
+    font-family: 'Font Awesome\ 5 Free', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #585858;
+    box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.1);
+    border: 0px solid transparent;
+    border-radius: 0.5rem;
+}
+
+#search-bar::placeholder {
+    font-family: "Font Awesome\ 5 Free", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #a4a4a4;
+}
+
+#search-bar:focus {
+    outline: none;
+    box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.3);
 }
 
 .instruction {
@@ -66,4 +83,3 @@ body {
     color: #4a4a4a;
     margin-top: 5px;
 }
-
