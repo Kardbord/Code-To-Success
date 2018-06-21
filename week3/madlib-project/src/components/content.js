@@ -9,6 +9,7 @@ class Content extends Component {
   renderLabel(data) {
     return [<b> {data}</b>];
   }
+
   render() {
     const data = this.props.data;
 
