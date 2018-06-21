@@ -109,7 +109,7 @@ class Card extends Component {
         >
           {!this.state.contentVisible ? "Generate Mad Lib" : "Clear Form"}
         </button>
-        '
+
         {this.state.contentVisible ? <Content data={this.state} /> : ""}
       </form>
     );
