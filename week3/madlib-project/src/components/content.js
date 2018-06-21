@@ -13,9 +13,6 @@ class Content extends Component {
   render() {
     const data = this.props.data;
 
-    //this.probs.data.map((object,index) => {
-    //console.log(index);
-    //<span>{data.indexOf(data.color)}</span>
     return (
       <div className="card__content">
         <p>
