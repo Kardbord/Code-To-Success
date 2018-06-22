@@ -10,3 +10,6 @@
 [submodule "social-network-html-css"]
 	path = social-network-html-css
 	url = https://github.com/jordanhudgens/social-network-html-css.git
+[submodule "week3/ReactPropStateThisDeepDive"]
+	path = week3/ReactPropStateThisDeepDive
+	url = https://github.com/jordanhudgens/ReactPropStateThisDeepDive.git
