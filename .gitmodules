@@ -19,3 +19,6 @@
 [submodule "week4/ReactComponentLifecycleDeepDive"]
 	path = week4/ReactComponentLifecycleDeepDive
 	url = https://github.com/jordanhudgens/ReactComponentLifecycleDeepDive.git
+[submodule "schedule-app"]
+	path = schedule-app
+	url = https://github.com/Kardbord/schedule-app.git
