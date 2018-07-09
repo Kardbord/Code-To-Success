@@ -13,9 +13,6 @@
 [submodule "week3/ReactPropStateThisDeepDive"]
 	path = week3/ReactPropStateThisDeepDive
 	url = https://github.com/jordanhudgens/ReactPropStateThisDeepDive.git
-[submodule "week4/countdown-app"]
-	path = week4/countdown-app
-	url = https://github.com/Kardbord/countdown-app.git
 [submodule "week4/ReactComponentLifecycleDeepDive"]
 	path = week4/ReactComponentLifecycleDeepDive
 	url = https://github.com/jordanhudgens/ReactComponentLifecycleDeepDive.git
