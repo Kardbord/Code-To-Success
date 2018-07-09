@@ -22,3 +22,9 @@
 [submodule "countdown-app"]
 	path = countdown-app
 	url = https://github.com/Kardbord/countdown-app.git
+[submodule "ReactComponentLifecycleDeepDive"]
+	path = ReactComponentLifecycleDeepDive
+	url = https://github.com/jordanhudgens/ReactComponentLifecycleDeepDive.git
+[submodule "ReactPropStateThisDeepDive"]
+	path = ReactPropStateThisDeepDive
+	url = https://github.com/jordanhudgens/ReactPropStateThisDeepDive.git
