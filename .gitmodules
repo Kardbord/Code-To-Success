@@ -22,3 +22,9 @@
 [submodule "schedule-app"]
 	path = schedule-app
 	url = https://github.com/Kardbord/schedule-app.git
+[submodule "madlib"]
+	path = madlib
+	url = https://github.com/Kardbord/madlib.git
+[submodule "property-management"]
+	path = property-management
+	url = https://github.com/Kardbord/property-management.git
