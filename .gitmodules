@@ -10,12 +10,6 @@
 [submodule "social-network-html-css"]
 	path = social-network-html-css
 	url = https://github.com/jordanhudgens/social-network-html-css.git
-[submodule "ReactPropStateThisDeepDive"]
-	path = ReactPropStateThisDeepDive
-	url = https://github.com/jordanhudgens/ReactPropStateThisDeepDive.git
-[submodule "ReactComponentLifecycleDeepDive"]
-	path = ReactComponentLifecycleDeepDive
-	url = https://github.com/jordanhudgens/ReactComponentLifecycleDeepDive.git
 [submodule "schedule-app"]
 	path = schedule-app
 	url = https://github.com/Kardbord/schedule-app.git
