@@ -25,3 +25,6 @@
 [submodule "property-management"]
 	path = property-management
 	url = https://github.com/Kardbord/property-management.git
+[submodule "countdown-app"]
+	path = countdown-app
+	url = https://github.com/Kardbord/countdown-app.git
