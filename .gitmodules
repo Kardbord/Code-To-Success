@@ -16,9 +16,6 @@
 [submodule "madlib"]
 	path = madlib
 	url = https://github.com/Kardbord/madlib.git
-[submodule "property-management"]
-	path = property-management
-	url = https://github.com/Kardbord/property-management.git
 [submodule "countdown-app"]
 	path = countdown-app
 	url = https://github.com/Kardbord/countdown-app.git
@@ -28,3 +25,6 @@
 [submodule "ReactPropStateThisDeepDive"]
 	path = ReactPropStateThisDeepDive
 	url = https://github.com/jordanhudgens/ReactPropStateThisDeepDive.git
+[submodule "prop-management"]
+	path = prop-management
+	url = https://github.com/bottega-code-school/prop-management.git
